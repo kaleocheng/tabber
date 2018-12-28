@@ -1,0 +1,16 @@
+{
+    "name": "Tabber",
+    "version": "1.0",
+    "description": "Show number in tab",
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "manifest_version": 2
+}
