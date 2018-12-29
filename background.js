@@ -9,11 +9,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                 }
                 if (tab.index < 8) {
                     chrome.tabs.executeScript(tab.id, {
-                        code: `document.title = '[${tab.index + 1}] ${titles[tab.id]}'`
+                        code: `document.title = '⌘${tab.index + 1} ${titles[tab.id]}'`
                     })
                 } else if (i === tabs.length - 1) {
                     chrome.tabs.executeScript(tab.id, {
-                        code: `document.title = '[9] ${titles[tab.id]}'`
+                        code: `document.title = '⌘9 ${titles[tab.id]}'`
                     })
                 } else {
                     chrome.tabs.executeScript(tab.id, {
