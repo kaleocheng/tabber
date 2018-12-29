@@ -1,5 +1,7 @@
 function stripTitle(title) {
     return title.replace(/⌘[1-9] /g, '')
+        .replace(/'/g, "\\'")
+        .replace(/"/g, '\\"')
 }
 
 function updateTabNumber() {
