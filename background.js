@@ -39,3 +39,7 @@ chrome.tabs.onRemoved.addListener((tabId, removeInfo) => {
     updateTabNumber()
 })
 
+
+chrome.tabs.onMoved.addListener((tabId, moveInfo) => {
+    updateTabNumber()
+})
